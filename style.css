@@ -1,0 +1,534 @@
+/*
+Theme Name: Diar Theme Two
+Theme URL: www.diar.com
+Description: Tema diseñado para diar.com
+Version: 2.0
+Author: Nelson Manel Ordaz Yglesias
+Author URL: http://www.nelsonkewebs.blogspot.mx
+*/
+
+@font-face {
+	font-family: 'IcoMoon-Free';
+	src: url('fonts/IcoMoon-Free.ttf?-b7qzp2') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body 
+{
+	background: #BFBFBF;
+	font-family: "Open sans", sans-serif;
+	font-size: 16pt;
+	color: #111216 !important;
+}
+
+a
+{
+	text-decoration: none;
+	color: #111216;
+}
+
+/* Diseño de la cabecera */
+
+header
+{
+	background: #3566A0;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+	padding-bottom: 0.8rem;
+}
+
+header hgroup 
+{
+	padding: 10px 20px;
+	width: 30%;
+	display: inline-block;
+}
+
+header h1 
+{
+	background: url('img/logo.png') no-repeat center center;
+	font-family: "Poiret One", sans-serif;
+	font-size: 0pt;
+	height: 49px;
+	margin: 0px;
+	width: 113px;
+	vertical-align: top;
+}
+
+header h1 a 
+{
+	color: #eee;
+	display: block;
+	width: 113px;
+	height: 49px;
+	text-decoration: none;
+}
+
+header h2
+{
+	font-family: "Poiret One", sans-serif;
+	font-size: 1rem;
+	vertical-align: bottom;
+}
+
+header h1, header h2 
+{
+	color: #EEE;
+	display: inline-block;
+}
+/* Fin de Diseño de la cabecera */
+
+/* Diseño del menu */
+nav 
+{
+	padding-top: 23px;
+	display: inline-block !important;
+	width: 50%;
+	vertical-align: top;
+	text-align: right;
+}
+
+nav ul li 
+{
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a 
+{
+	color: #EEE;
+	border-radius: 0.5rem;
+	border-bottom: 3px solid rgba(0,0,0,0.0);
+	display: block;
+	font-size: 1rem;
+	margin-right: 5px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	background: rgb(95,45,30);
+	border-bottom: 3px solid rgba(0,0,0,0.4);
+}
+
+nav ul li.current-menu-item a
+{
+	background: rgb(95,45,30);
+	border-bottom: none;
+	border-top: 3px solid rgba(0,0,0,0.4);
+}
+
+/* Fin del diseño del menu */
+
+/* Diseño del slideshow */
+
+section#slideshow 
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+section#slideshow .slides
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+section#slideshow img
+{
+	width: 100%;
+	height: 100%;
+}
+
+section#slideshow article
+{
+	bottom: 50px;
+	display: block;
+	position: absolute;
+	right: 30px;
+}
+
+section#slideshow article a
+{
+	/* Verde limon */
+	/*
+	background: rgba(0,160,0,0.9);
+	border-radius: 10px;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+	*/
+
+	/* Gris verdoso */
+	background: rgba(80,80,69,1.0);
+	border-bottom: 4px solid rgba(0,0,0,0.4);
+	border-radius: 10px;
+	box-shadow: -5px 5px 15px rgba(0,0,0,0.6);
+	color: #eee;
+	font-family: 'Open sans', Arial, Helvetica, sans-serif;
+	font-size: 0.9rem;
+	opacity: 1.0;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+section#slideshow .slidesjs-pagination
+{
+	text-align: center;
+}
+
+section#slideshow .slidesjs-pagination li 
+{
+	background: #505045;
+	border-radius: 3rem;
+	border: 3px solid rgba(0,0,0,0.2);
+	display: inline-block;
+	height: 15px;
+	margin-right: 10px;
+	width: 15px;
+}
+
+section#slideshow .slidesjs-pagination li a
+{
+	border-radius: 3rem;
+	display: block;
+	height: 15px;
+	font-size: 0pt;
+	width: 15px;
+}
+
+section#slideshow .slidesjs-pagination li .active
+{
+	background: #111216;
+}
+
+/* Diseño del slideshow */
+
+/* Diseño para blog*/
+
+h2#categoria
+{
+	background: #505045;
+	border-radius: 0.5rem;
+	color: #eee;
+	/*font-family: "Poiret One", sans-serif;*/
+	font-family: "Open sans", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	width: 85%;
+}
+
+/* Fin de Diseño para blog*/
+
+/* Diseño de los articulos */
+
+section#lista-articulos
+{
+	float: none;
+	margin-top: 2rem;
+	width: 85%;
+
+}
+
+section#lista-articulos article
+{
+	background: #eee;
+	border-radius: 5px;
+	box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+	display: inline-block;
+	padding: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	width: 30%;
+	vertical-align: top;
+	height: auto;
+}
+section#lista-articulos article figure
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+section#lista-articulos article figure figcaption
+{
+	color:#eee;
+	font-size: 1rem;
+	font-family: "Open sans", sans-serif;
+	font-weight: 300;
+	left: 0px;
+	top: 30px;
+	padding: 5px 10px;
+	position: absolute;
+}
+
+section#lista-articulos article figure figcaption a
+{
+	color:#eee;
+	font-size: 1rem;
+	font-family: "Open sans", sans-serif;
+	font-weight: 300;
+}
+
+section#lista-articulos article figure figcaption.en-renta
+{
+	background: rgba(53,102,160,0.8);
+}
+
+section#lista-articulos article figure figcaption.en-venta
+{
+	background: rgba(95,45,30,0.8);
+}
+
+section#lista-articulos article img
+{
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+section#lista-articulos article h3
+{
+	color: #111216;
+	font-family: "Open sans", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 800;
+	text-align: left;
+}
+
+section#lista-articulos article h3 a:hover
+{
+	text-decoration: underline;
+}
+
+section#lista-articulos article p
+{
+	font-size: 0.8rem;
+	text-align: justify;
+}
+
+/* Fin de Diseño de los articulos */
+
+/* Diseño de un solo articulo */
+
+section#single 
+{
+	margin-top: 1rem;
+	text-align: center;
+}
+
+section#single article
+{
+	background: #eee;
+	border-radius: 5px;
+	box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+	display: inline-block;
+	padding: 20px;
+	width: 85%;
+	text-align: justify;
+}
+
+section#single article figure 
+{
+	margin: 0px;
+}
+
+section#single article img
+{
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+section#single article h3
+{
+	margin-bottom: 1rem;
+}
+
+/* Fin de Diseño de un solo articulo */
+
+
+/* Diseño de paginacion */
+
+section#paginacion
+{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+section#paginacion div
+{
+	display: inline;
+}
+
+section#paginacion div#pag-siguiente a:before, section#paginacion div#pag-anterior a:before
+{
+	font-family: 'IcoMoon-Free';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	color: #505045;
+	font-size: 2rem;
+}
+
+section#paginacion div#pag-siguiente a:before
+{
+	content: "\ea44";
+}
+
+section#paginacion div#pag-anterior a:before
+{
+	content: "\ea42";
+}
+
+/* Fin de diseño de paginacion */
+
+/* Icon Fonts */
+.icon {
+	font-family: 'IcoMoon-Free';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circulo-derecha:before {
+	content: "\ea42";
+	
+}
+
+.icon-circulo-izquierda:before
+{
+	content: "\ea44";
+}
+
+.icon-circulo-izquierda, .icon-circulo-derecha
+{
+	color: #505045;
+	font-size: 2rem;
+}
+
+.icon-circulo-facebook:before
+{
+	content: "\ea8e";
+	color: #3b5998;
+	font-size: 1.5rem;
+}
+
+.icon-circulo-twitter:before
+{
+	content: "\ea93";
+	color: #00aced;
+	font-size: 1.5rem;
+}
+
+.icon-phone:before
+{
+	content: "\e942";
+}
+
+.icon-email:before
+{
+	content: "\e945";
+}
+/* Fin Icon fonts */
+
+
+/* Diseño del footer */
+
+footer
+{
+	background-color: #5F2D1E;
+	margin-top: 2rem;
+	width: 100%;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+footer p
+{
+	font-family: "Poiret One", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding-top: 5px;
+	color: rgba(255,255,255,0.4);
+}
+
+footer p a.correo
+{
+	color: rgba(255,255,255,0.4);
+}
+
+
+/* Fin de diseño del footer */
+
+
+.centrar-elemento
+{
+	margin: 0 auto;
+}
+
+.texto-firma
+{
+	font-family: "Pacifico", sans-serif;
+	color: rgba(255,255,255,0.6);
+}
+
+.texto-chico
+{
+	font-size: 0.9rem;
+}
+
+.fecha
+{
+	font-family: "Poiret One", sans-serif;
+	color: #999;
+	padding-bottom: 10px;
+}
+
+/* Mapa */
+
+.cmp-map
+{
+	width: 100% !important;
+}

@@ -1,0 +1,95 @@
+/* Medida para tablet horizontal */
+
+@media screen and (max-width:1024px){
+	
+	#no-slide
+	{
+		display: none;
+	}
+	
+	section#lista-articulos article
+	{
+		width: 45%;
+	}
+
+	nav ul li a
+	{
+		background: rgb(95,45,30);
+		border-bottom: 3px solid rgba(0,0,0,0.4);	
+	}
+
+	.wp-easy-gallery
+	{
+		display: none;
+	}
+
+}
+
+/* Medida para tablet vertical */
+@media screen and (max-width:768px){
+	nav ul li a
+	{
+		margin: 2px;
+	}
+}
+
+
+/* Medida de iPhone */
+@media screen and (max-width:640px){
+
+	header hgroup 
+	{
+		text-align: center;
+		width: 100%;
+		margin: 0px;
+		margin-top: 15px;
+		padding: 0px;
+	}
+
+	nav
+	{
+		margin: 0px;
+		text-align: center;
+		width: 100%;
+	}
+
+	section#lista-articulos 
+	{
+		width: 100%;
+		margin: 0px;
+		margin-top: 1rem;
+		vertical-align: center;
+		text-align: center;
+	}
+	
+	section#lista-articulos article
+	{
+		width: 90%;
+		margin: 0px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	section#lista-articulos article p
+	{
+		text-align: justify;
+	}
+
+	section#paginacion
+	{
+		margin-top: 10px;
+	}
+
+	.icon-circulo-izquierda, .icon-circulo-derecha
+	{
+		font-size: 4rem;
+	}
+
+}
+/* Medida para smartphone */
+
+/*
+@media screen and (max-width:400px){
+
+}
+*/
